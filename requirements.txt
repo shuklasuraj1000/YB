@@ -20,3 +20,4 @@ json
 requests
 os
 selenium
+python==3.9
