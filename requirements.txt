@@ -6,5 +6,4 @@ youtube_dl
 requests
 pytube
 requests
-os
 selenium
