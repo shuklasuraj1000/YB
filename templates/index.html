@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURAJ SHUKLA</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="{{url_for('static',filename='logo.png')}}" alt=",">
+            </div>
+
+            <div class="background-image">
+                <img src="{{url_for('static',filename='1.png')}}" alt=",">
+            </div>
+
+            <div class="button">
+                <a href="{{ url_for('page1') }}" target="_blank" class="btn">VIDEOS AND URL</a>
+                <a href="{{ url_for('page2') }}" target="_blank" class="btn">USER AND COMMENTS</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="btn1">DOWNLOAD VIDEO AND THUMBNAIL IMAGE HERE</a>
+            </div>
+
+
+
+        </div>
+
+        <div class="form">
+            <form  action="/review3" method="POST">
+                <input class="content3" type="text" name="content3" id="content3" placeholder=">>> https://www.youtube.com/watch?v=qZVTkn2NjS0<<<">
+                <input class="search" type="submit" value="Download"><br>
+
+
+            </form>
+        </div>
+
+
+        <div class="title">
+            <h1>"YOUTUBE SCRAPPER"</h1>
+        </div>
+
+        <div class="marq">
+            <h2><marquee>downloading may take several minutes, please have patience!! </marquee></h2>
+        </div>
+
+        <div class="plane">
+            <marquee bgcolor="orangered"><img src="{{url_for('static',filename='2.png')}}" alt=","></marquee>
+        </div>
+
+
+    </header>
+    
+</body>
+
+<style>
+
+    .background-image{
+            background-size:cover;
+            background-image: url('./static/1.jpg');
+            background-repeat: no-repeat;
+            height: 90vh;
+            }
+    .logo img{
+            float: left;
+            border-radius: 2%;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color:#fff;
+            }
+
+    .plane img{
+            float: left;
+            border-radius: 2%;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 0px;
+            background-color:none;
+            background-image: url('./static/2.png');
+            background-repeat: no-repeat;
+            }
+
+
+    .title{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+    .marq{
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+    .marq h2{
+            color: #fff;
+            font-size: 20px;
+            }
+    .button{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+       .box{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+           *{
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+            }
+
+    .title h1{
+            color: #fff;
+            font-size: 60px;
+            }
+
+    .btn   {
+            border: 1px solid #fff;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 30px;
+            }
+
+     .btn1   {
+
+            color: #fff;
+            text-decoration: none;
+            background-color: #F50E1C;
+            padding: 10px 30px;
+            }
+
+    .btn:hover{
+            background-color: #fff;
+            color: #000;
+            }
+
+      .form{
+           position: absolute;
+           top: 52%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           }
+
+    .form input.content3 {
+           height: 30px;
+           width: 330px;
+           }
+
+.form input.search {
+           height: 35px;
+           width: 105px;
+           }
+
+</style>
+
+</html>
