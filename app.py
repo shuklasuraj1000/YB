@@ -164,7 +164,7 @@ def index3():
             thumbnail = YouTube(link).thumbnail_url
             ydl_opts = {}
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([link])
+                #ydl.download([link])
                 ydl.download([thumbnail])
                 time.sleep(10)
 
