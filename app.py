@@ -53,7 +53,7 @@ def index():
             driver.get(youtube_url)
 
                 # Scrolling web page 10 time after wait of 2 seconds. If you need to scroll more change value (ex. 10, 50, 100)
-            for item in range(10):
+            for item in range(1):
                 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
                 time.sleep(2)
 
@@ -71,7 +71,7 @@ def index():
             # Creating new file and feeding data
             fw = open("table.csv", "w")
             fw.close()
-            time.sleep(10)
+            time.sleep(2)
             fw = open("table.csv", "w")
             headers = "Channel, title, url, Views \n"
             fw.write(headers)
@@ -115,7 +115,7 @@ def index2():
             driver.get(youtube_url)
 
             # Scrolling web page 10 time after wait of 2 seconds. If you need to scroll more change value (ex. 10, 50, 100)
-            for item in range(10):
+            for item in range(1):
                 wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
                 time.sleep(2)
 
@@ -129,7 +129,7 @@ def index2():
             # Creating new file and feeding data
             fw = open("table1.csv", "w")
             fw.close()
-            time.sleep(10)
+            time.sleep(2)
             fw = open("table1.csv", "w")
             headers = "user, comment \n"
             fw.write(headers)
@@ -169,7 +169,7 @@ def index3():
                 time.sleep(10)
 
             headers = {
-                "Authorization": "Bearer ya29.a0AVA9y1vYJzOwLbDCMsDPRrN6NNOGfQbLwWbOWOfKzO-tD6CAgsPrmTTuu9XVTQBd5TszTD_PQ9NUxtrZRjl5ybFtvmVrRAw_Mwor0a06_k1SlixwJYOm0CRQ_QFFrYlEyCsrjoGeZ4fiJIHh7EiaxO9HCINJaCgYKATASARISFQE65dr8PTGaVjmQPKY9xICv25h8bQ0163"}
+                "Authorization": "Bearer ya29.a0AVA9y1tvT5KmiEJmAg7q06T-uPT27VapJtOp7kgTRKKX4CJ_v5zsTWmvhJP104YbQ4uJoEaxoYXPN4wZfj_aFdKE9v96Tg8l4KkvU9MK3fkB_lmyq37bRkM5vbskhEtGEdc_56-Vo2lFSf6OtnuQTmuyeT95aCgYKATASARISFQE65dr8GYGsAb05eg1CYLPmnXlEAw0163"}
             para = {
                 "name": "samplefile.png",
                 "parents": ["1v334xDf2-ZKLAofn0gwmSctr3YuwwCor"]
