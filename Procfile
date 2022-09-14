@@ -1,2 +1,3 @@
-web: gunicorn app:app && sh setup.sh && streamlit run app.py
+web: gunicorn app:app
+web: node --optimize_for_size --max_old_space_size=920 server.js
 
