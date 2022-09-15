@@ -59,12 +59,13 @@
 </body>
 
 <style>
-
+    @media only screen and (max-width:800px){
     .background-image{
             background-size:cover;
             background-image: url('./static/1.jpg');
             background-repeat: no-repeat;
-            height: 90vh;
+            height: 90%;
+            width : 90%
             }
     .logo img{
             float: left;
@@ -165,6 +166,116 @@
            height: 35px;
            width: 105px;
            }
+    }
+    
+     @media only screen and (max-width:400px){
+    .background-image{
+            background-size:cover;
+            background-image: url('./static/1.jpg');
+            background-repeat: no-repeat;
+            height: 90%;
+            width : 90%
+            }
+    .logo img{
+            float: left;
+            border-radius: 2%;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            background-color:#fff;
+            }
+
+    .plane img{
+            float: left;
+            border-radius: 2%;
+            width: 200px;
+            margin-left: 20px;
+            margin-top: 0px;
+            background-color:none;
+            background-image: url('./static/2.png');
+            background-repeat: no-repeat;
+            }
+
+
+    .title{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+    .marq{
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+    .marq h2{
+            color: #fff;
+            font-size: 20px;
+            }
+    .button{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+       .box{
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+           *{
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+            }
+
+    .title h1{
+            color: #fff;
+            font-size: 60px;
+            }
+
+    .btn   {
+            border: 1px solid #fff;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 30px;
+            }
+
+     .btn1   {
+
+            color: #fff;
+            text-decoration: none;
+            background-color: #F50E1C;
+            padding: 10px 30px;
+            }
+
+    .btn:hover{
+            background-color: #fff;
+            color: #000;
+            }
+
+      .form{
+           position: absolute;
+           top: 52%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           }
+
+    .form input.content3 {
+           height: 30px;
+           width: 330px;
+           }
+
+.form input.search {
+           height: 35px;
+           width: 105px;
+           }
+    }
 
 </style>
 
